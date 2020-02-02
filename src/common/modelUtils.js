@@ -1,0 +1,1 @@
+// createModel: accept Array/Object and return Array/Object of model

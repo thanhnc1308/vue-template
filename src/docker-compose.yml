@@ -1,0 +1,11 @@
+version: 3
+networks:
+  - demo
+    driver: bridge
+services:
+  client:
+    build: .
+    networks:
+      -demo
+    ports:
+      - "80:80"

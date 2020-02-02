@@ -6,6 +6,9 @@ class Session {
     rootUrl = window.location.href; // url basic
     useId = null;
     enviroment = '';
+    numberFormat = {
+        GenerateGroupSeperator: '.'
+    }
 }
 
 export default new Session();

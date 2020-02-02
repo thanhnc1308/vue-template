@@ -1,4 +1,11 @@
 # Basics
+- scaffold --> generate template, script, style
+- should import component in template in html-style not JsStyle
+- in child component, this.$attr store all attribute --> does it store props?
+- created() --> create data here, so we can not access data in beforeCreate. should call API ajax here
+- mounted() --> mount template html into UI. can only access DOM from here. use jQuery from here
+- @input='$emit('eventName', $event)'
+- should use app.$set(object, key, newVal) to modify index so that Vue can detect the changes and re-render UI. If change in a unclear way like object.key = newVal, Vue do not react
 ## Syntax
 - For object: v-for="(val, key) in object"
 - For array: v-for="(item, index) in array"
@@ -55,7 +62,7 @@ vue init <template_name> <project_name>
 - Divide components before coding (based on header-body-footer)
 - Chrome Extension: Vuejs devtool
 - VS Extension: vetur, auto rename tag, auto close tag, bracket pair, vue peek, vue 2 snippets
-- package.json: vue-router, vuex, vue-i18n (for localize), vuedraggable, vuejs-datepicker, vue-select, veevalidate, vue-perfect-scrollbar, vue-feather-icons, vuepress, vuesax, axios, nprogress, vue-backtotop, vue2-goole-map, algolia-instant-search, firebase, acl (access controller), AuthPlugin, VueTour, VeeValidate, PrismJS, VueClipboard, vue-context, vue-fullcalendar, vue-tabes-2, vue-chartjs, echarts, apexchart, material-icons, tailwindcss, prismjs, 
+- package.json: vue-router, vuex, vue-i18n (for localize), vuedraggable, vuejs-datepicker, vue-select, veevalidate, vue-perfect-scrollbar, vue-feather-icons, vuepress, vuetify, axios, nprogress, vue-backtotop, vue2-goole-map, algolia-instant-search, firebase, acl (access controller), AuthPlugin, VueTour, VeeValidate, PrismJS, VueClipboard, vue-context, vue-fullcalendar, vue-tabes-2, vue-chartjs, echarts, apexchart, material-icons, tailwindcss, prismjs, 
 - globalComponents.js --> register components globally
 - globalFunctions.js
 
@@ -66,3 +73,15 @@ vue init <template_name> <project_name>
 - xhr.open('POST', action)
 - transform: rotate(45deg), -moz, -webkit, -o, -ms
 - max length in array: arr.reduce( (a,b) => {return a.length > b.length ? a : b})
+
+# Some problems
+- lazy-loading
+- use pointer to move the screen like in mobilephone
+- button that can be draggable
+- content placeholder
+
+# Format .vue
+- Prettier .prettierrc
+- Vetur
+- EditorConfig
+- jsconfig.json

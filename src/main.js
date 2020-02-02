@@ -10,8 +10,17 @@ import {store} from './store/store'
 // global components
 import globalComponents from './global/globalComponents'
 
+// global function
+import globalFunctions from './global/globalFunctions'
+
 // router
 import {router} from './router'
+
+// add extension
+import '@/common/extension'
+
+// add filters
+import '@/filters/filters'
 
 // global style
 import '@/assets/scss/common/main.scss'

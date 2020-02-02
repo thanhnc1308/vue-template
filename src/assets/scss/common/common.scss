@@ -1,2 +1,5 @@
-@import '@/assets/scss/common/_variables.scss'
+@import '@/assets/scss/common/_variables.scss';
 
+.test {
+    color: $test-color;
+}
